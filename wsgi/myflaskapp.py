@@ -9,7 +9,7 @@ import psycopg2.extras
 
 from datetime import date
 
-from pymongo import MongoClient
+#from pymongo import MongoClient
 from bson import json_util
 
 import urllib2
@@ -35,7 +35,7 @@ def datastore_search_sql():
         query = request.args['q']
 
         cur.execute(query)
-    data = cur.fetchall()
+        data = cur.fetchall()
         reply = []
 
         for row in data:
@@ -66,7 +66,7 @@ def package_search():
 
 
 
-
+'''
 @app.route('/api/action/package_show', methods = ['GET', 'POST'])
 def package_show():
     
@@ -80,6 +80,8 @@ def package_show():
         return add_header(json.dumps(reply, default=json_util.default))
     else:
         return not_found()
+'''
+
 
 # Used for encoding Postgres dates
 class DateEncoder(json.JSONEncoder):
