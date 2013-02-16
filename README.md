@@ -1,11 +1,11 @@
-##OpenDataStack Quickstart Deployment Package for OpenShift
+##OpenDataStack Quickstart for OpenShift
 =====
 
 ###Deployment
 
 Sign up for [OpenShift](https://openshift.redhat.com/app/)
 
-Install [rhc](https://openshift.redhat.com/community/developers/rhc-client-tools-install)
+Install the OpenShift [client](https://openshift.redhat.com/community/developers/rhc-client-tools-install)
 
 Create your app and database
 
@@ -15,12 +15,11 @@ Create your app and database
     $ git pull -s recursive -X theirs upstream master
     $ git push
     $ rhc cartridge add postgresql-8.4 -a opendatastack
-(Copy down the username, password, and database name)
 
 Forward ports from your local machine
 
     $ rhc port-forward -a opendatastack    
-(Note the IP that's being forwarded for Postgres)
+(Note the IP for Postgres)
 
 Push some data to your OpenShift database
 
