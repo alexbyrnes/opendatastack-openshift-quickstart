@@ -1,5 +1,7 @@
-OpenDataStack Quickstart Deployment Package for OpenShift
-========
+##OpenDataStack Quickstart Deployment Package for OpenShift
+=====
+
+###Deployment
 
 Sign up for [OpenShift](https://openshift.redhat.com/app/)
 
